@@ -20,8 +20,9 @@ class CorrectionTooltip {
         PopupMenuItem(
           enabled: false,
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
+              Wrap(
                 children: [
                   Text(
                     oldText,
