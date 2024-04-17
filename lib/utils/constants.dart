@@ -4,3 +4,5 @@ import 'package:flutter/material.dart';
 const maxTextLength = 500 + 1;
 
 const correctionTextColor = Colors.green;
+
+const apiKey = String.fromEnvironment('API_KEY', defaultValue: '');

@@ -18,22 +18,22 @@ C est une joie immensee de savoir que mon artile de blog où j'ai écrit il y a 
 			""old"": ""immensee"",
 			""new"": ""immenses"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'immenses'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'immenses'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'immenses'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'immenses'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'immenses' से बदल दिया जाता है""
+				""en"": ""Spelling error"",
+                                ""fr"": ""Erreur d'orthographe"",
+                                ""sw"": ""Kosa la tahajia"",
+                                ""li"": ""Libunga ya ko kɔta"",
+                                ""hi"": ""वर्तनी संबंधी त्रुटि""
 			}
 		},
 		{
 			""old"": ""artile"",
 			""new"": ""article"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'article'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'article'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'article'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'article'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'article' से बदल दिया जाता है""
+				""en"": ""Spelling error"",
+                                ""fr"": ""Erreur d'orthographe"",
+                                ""sw"": ""Kosa la tahajia"",
+                                ""li"": ""Libunga ya ko kɔta"",
+                                ""hi"": ""वर्तनी संबंधी त्रुटि""
 			}
 		}
 	],
@@ -59,37 +59,37 @@ C est une joie immensee de savoir que mon artile de blog où j'ai écrit il y a 
 			""old"": ""amy"",
 			""new"": ""many"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'many'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'many'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'many'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'many'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'many' से बदल दिया जाता है""
+				""en"": ""Homophonic confusion, \""many\"" is more appropriate in this context."",
+				""fr"": ""Confusion homophonique, \""many\"" est plus adapté dans ce contexte."",
+				""sw"": ""Uchanganyaji wa homophonic, \""many\"" inafaa zaidi katika muktadha huu."",
+				""li"": ""Likuluku ya homophonic, \""many\"" eleki kaka na kati ya contexte oyo."",
+				""hi"": ""होमोफोनिक भ्रम, \""many\"" इस संदर्भ में अधिक उपयुक्त है।""
 			}
 		},
 		{
 			""old"": ""non"",
 			""new"": ""not"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'not'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'not'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'not'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'not'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'not' से बदल दिया जाता है""
+				""en"": ""Vocabulary error, \""not\"" is more appropriate in this context."",
+				""fr"": ""Erreur de vocabulaire, \""not\"" est plus adapté dans ce contexte."",
+				""sw"": ""Hitilafu ya msamiati, \""not\"" inafaa zaidi katika muktadha huu."",
+				""li"": ""Esobe ya vocabulaire, \""not\"" eleki kaka na contexte oyo."",
+				""hi"": ""शब्दावली त्रुटि, इस संदर्भ में \""not\"" अधिक उपयुक्त है।""
 			}
 		},
 		{
 			""old"": ""hangry"",
 			""new"": ""hungry"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'hungry'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'hungry'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'hungry'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'hungry'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'hungry' से बदल दिया जाता है""
+				""en"": ""Lexical choice, \""hungry\"" is more appropriate in this context."",
+				""fr"": ""Choix lexical, \""hungry\"" est plus approprié dans ce contexte."",
+				""sw"": ""Uchaguzi wa msamiati, \""hungry\"" inafaa zaidi katika muktadha huu."",
+				""li"": ""Komba ya vocabulaire, \""hungry\"" eleki kaka na contexte oyo."",
+				""hi"": ""शब्द चयन, इस संदर्भ में \""hungry\"" अधिक उपयुक्त है।""
 			}
 		}
 	],
-""correction_quill"": [{""insert"":""I have ""},{""insert"":""eaten"",""attributes"":{""link"":""0""}},{""insert"":"" water and drunk ""},{""insert"":""many"",""attributes"":{""link"":""1""}},{""insert"":"" apples, I am ""},{""insert"":""not"",""attributes"":{""link"":""2""}},{""insert"":"" ""},{""insert"":""hungry"",""attributes"":{""link"":""3""}},{""insert"":"" today but I will be tomorrow.""}],
+""correction_quill"": [{""insert"":""I have ""},{""insert"":""eaten"",""attributes"":{""link"":""0""}},{""insert"":"" water and drunk ""},{""insert"":""many"",""attributes"":{""link"":""1""}},{""insert"":"" apples, I am ""},{""insert"":""not"",""attributes"":{""link"":""2""}},{""insert"":"" ""},{""insert"":""hungry"",""attributes"":{""link"":""3""}},{""insert"":"" today but I will be tomorrow.\\n""}],
 	""suggestion"": ""I've had water and plenty of apples today, so I'm not hungry now, but I might be tomorrow.""
 }"
 J suis beaucoup d argent,"{
@@ -108,7 +108,7 @@ J suis beaucoup d argent,"{
 			}
 		}
 	],
-""correction_quill"": [{""insert"":""J'ai beaucoup ""},{""insert"":""d'argent"",""attributes"":{""link"":""0""}}],
+""correction_quill"": [{""insert"":""J'""},{""insert"":""ai"",""attributes"":{""link"":""0""}},{""insert"":"" beaucoup d'argent\\n""}],
 	""suggestion"": ""Je suis très aisé financièrement.""
 }"
 como mazanas :),"{
@@ -127,7 +127,7 @@ como mazanas :),"{
 			}
 		}
 	],
-""correction_quill"": [{""insert"":""Como ""},{""insert"":""manzanas"",""attributes"":{""link"":""0""}}],
+""correction_quill"": [{""insert"":""Como"",""attributes"":{""link"":""0""}},{""insert"":"" manzanas\\n""}],
 	""suggestion"": ""Disfruto de comer manzanas :)""
 }"
 "Hi Lena,
@@ -156,7 +156,7 @@ Loïc Y.","{
 			}
 		}
 	],
-""correction_quill"": [{""insert"":""Hi Lena, ""},{""insert"":""\n\nI hope you are doing well. I just wanted to ensure that you also received the Google Play Store notification about the issue with your developer account.\n\nPlay Console developer accounts are intended for developers who actively publish and maintain apps. To protect the safety of app users, developer accounts that aren't used are closed.\n\nTo fix this, we have to""},{""insert"":""upload"",""attributes"":{""link"":""0""}},{""insert"":"" a new version. We don't need to add features; on my side, I just have to update development dependencies, build a new version, and update the app on the Google Play Store. If this action is not done by May 18th, the account will be closed.\n\nLet me know if you're interested in fixing that.\nThank you.\nLoïc Y.""}],
+""correction_quill"": [{""insert"":""Hi Lena, ""},{""insert"":""\n\nI hope you are doing well. I just wanted to ensure that you also received the Google Play Store notification about the issue with your developer account.\n\nPlay Console developer accounts are intended for developers who actively publish and maintain apps. To protect the safety of app users, developer accounts that aren't used are closed.\n\nTo fix this, we have to""},{""insert"":""upload"",""attributes"":{""link"":""0""}},{""insert"":"" a new version. We don't need to add features; on my side, I just have to update development dependencies, build a new version, and update the app on the Google Play Store. If this action is not done by May 18th, the account will be closed.\n\nLet me know if you're interested in fixing that.\nThank you.\nLoïc Y.\\n""}],
 	""suggestion"": ""Hi Lena,\n\nI hope everything is going smoothly for you. I'm writing to confirm whether you received the notification from Google Play Store regarding an issue with your developer account.\n\nGoogle Play Console developer accounts are meant for those who actively publish and manage apps. Accounts that remain inactive are closed to protect users' safety.\n\nTo resolve this, we need to upload a new version of your app. This doesn't require any new features; I simply need to update the development dependencies, build a new version, and publish it to the Google Play Store. If we don't take action by May 18th, the account will be closed.\n\nPlease let me know if you'd like me to proceed with this.\n\nThank you,\nLoïc Y.""
 }"
 I love read book because book I study a lot in books for mee it is better that reading with Internet who agree with wath I am saying right now?,"{
@@ -189,26 +189,26 @@ I love read book because book I study a lot in books for mee it is better that r
 			""old"": ""mee"",
 			""new"": ""me"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'me'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'me'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'me'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'me'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'me' से बदल दिया जाता है""
+				""en"": ""Spelling error"",
+				""fr"": ""Erreur d'orthographe"",
+				""sw"": ""Hitilafu ya herufi"",
+				""li"": ""Esobe ya lituka"",
+				""hi"": ""वर्तनी त्रुटि""
 			}
 		},
 		{
 			""old"": ""who agree with wath I am saying right now"",
 			""new"": ""Who agrees with what I am saying right now?"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'what'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'what'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'what'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'what'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'what' से बदल दिया जाता है""
+				""en"": ""Grammatical and spelling corrections to the original text."",
+				""fr"": "" Corrections grammaticales et orthographiques du texte original"",
+				""sw"": ""Marekebisho ya kisarufi na ya herufi."",
+				""li"": ""Kokoma ya lisusu."",
+				""hi"": ""व्याकरण और वर्तनी सुधार।""
 			}
 		}
 	],
-""correction_quill"": [{""insert"":""I love ""},{""insert"":""to read"",""attributes"":{""link"":""0""}},{""insert"":"" ""},{""insert"":""books"",""attributes"":{""link"":""1""}},{""insert"":"" because""},{""insert"":"" ""},{""insert"":""I study a lot from books. For""},{""insert"":""me"",""attributes"":{""link"":""2""}},{""insert"":"" it is better than reading on the Internet. Who agrees with ""},{""insert"":""what"",""attributes"":{""link"":""3""}},{""insert"":"" I am saying right now?""}],
+""correction_quill"": [{""insert"":""I love ""},{""insert"":""to read"",""attributes"":{""link"":""0""}},{""insert"":"" ""},{""insert"":""books because"",""attributes"":{""link"":""1""}},{""insert"":"" I study a lot from books. For""},{""insert"":""me"",""attributes"":{""link"":""2""}},{""insert"":"", it is better than reading on the Internet. ""},{""insert"":""Who agrees with what I am saying right now?\\n"",""attributes"":{""link"":""3""}}],
 	""suggestion"": ""I love reading because I learn a lot from books. I find it more effective than browsing the Internet. Does anyone else agree?""
 }"
 " Il y a eux leur ils étaient assis dans le canapé en train de regarder la télé quand il a décidé de leur faire cuire le dîner. Il est allé au frigo et a pris la paule et les œufs. Il a allumé la cuisinière mais a accidentellement appuyé sur la pause et les œufs ont volé en éclaboussant le comptoir. Il pensait que c'était sans importance, alors il les a simplement essuyés et a mis la pause dans la poêle. Alors qu'il faisait frire la pause, il s'est rendu compte qu'il avait fait une erreur de lecture parce qu'il voulait en fait faire cuire du bacon. Il est ensuite allé au magasin acheter la bonne nourriture et leur a préparé un délicieux dîner.","{
@@ -230,37 +230,37 @@ I love read book because book I study a lot in books for mee it is better that r
 			""old"": ""paule"",
 			""new"": ""poulet"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'poulet'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'poulet'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'poulet'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'poulet'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'poulet' से बदल दिया जाता है""
+				""en"": ""Vocabulary or typographical error"",
+				""fr"": ""Erreur de vocabulaire ou de typographie"",
+				""sw"": ""Hitilafu ya msamiati au ya kuandika"",
+				""li"": ""Esobe ya vocabulaire to ya typographie"",
+				""hi"": ""शब्दावली या टाइपोग्राफिकल त्रुटि""
 			}
 		},
 		{
 			""old"": ""pause"",
 			""new"": ""gaz"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'gaz'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'gaz'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'gaz'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'gaz'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'gaz' से बदल दिया जाता है""
+				""en"": ""Vocabulary or typographical error, \""gaz\"" is the correct term in this context."",
+				""fr"": ""Erreur de vocabulaire ou de typographie, \""gaz\"" est le mot approprié dans ce contexte."",
+				""sw"": ""Hitilafu ya msamiati au ya kuandika, \""gaz\"" ni neno sahihi katika muktadha huu."",
+				""li"": ""Esobe ya vocabulaire to ya typographie, \""gaz\"" ezali liloba ya solo na contexte oyo."",
+				""hi"": ""शब्दावली या टाइपोग्राफिकल त्रुटि, इस संदर्भ में \""gaz\"" अधिक उपयुक्त है।""
 			}
 		},
 		{
 			""old"": ""pause"",
 			""new"": ""bacon"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'bacon'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'bacon'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'bacon'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'bacon'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'bacon' से बदल दिया जाता है""
+				""en"": ""Vocabulary or typographical error, \""bacon\"" is the correct term in this context."",
+				""fr"": ""Erreur de vocabulaire ou de typographie, \""bacon\"" est le mot approprié dans ce contexte."",
+				""sw"": ""Hitilafu ya msamiati au ya kuandika, \""bacon\"" ni neno sahihi katika muktadha huu."",
+				""li"": ""Esobe ya vocabulaire to ya typographie, \""bacon\"" ezali liloba ya solo na contexte oyo."",
+				""hi"": ""शब्दावली या टाइपोग्राफिकल त्रुटि, इस संदर्भ में \""bacon\"" अधिक उपयुक्त है।""
 			}
 		}
 	],
-""correction_quill"": [{""insert"":""Il y avait ""},{""insert"":""eux"",""attributes"":{""link"":""0""}},{""insert"":""; ils étaient assis dans le canapé en train de regarder la télé quand il a décidé de leur faire cuire le dîner. Il est allé au frigo et a pris le ""},{""insert"":""poulet"",""attributes"":{""link"":""1""}},{""insert"":"" et les œufs. Il a allumé la cuisinière mais a accidentellement appuyé sur le ""},{""insert"":""gaz"",""attributes"":{""link"":""2""}},{""insert"":"" et les œufs ont volé en éclaboussant le comptoir. Il pensait que c'était sans importance, alors il les a simplement essuyés et a mis le ""},{""insert"":""bacon"",""attributes"":{""link"":""3""}},{""insert"":"" dans la poêle. Alors qu'il faisait frire le ""},{""insert"":""bacon"",""attributes"":{""link"":""3""}},{""insert"":"" il s'est rendu compte qu'il avait fait une erreur de lecture parce qu'il voulait en fait faire cuire du bacon. Il est ensuite allé au magasin acheter la bonne nourriture et leur a préparé un délicieux dîner.""}],
+""correction_quill"": [{""insert"":""Il y avait ""},{""insert"":""eux"",""attributes"":{""link"":""0""}},{""insert"":""; ils étaient assis dans le canapé en train de regarder la télé quand il a décidé de leur faire cuire le dîner. Il est allé au frigo et a pris le ""},{""insert"":""poulet"",""attributes"":{""link"":""1""}},{""insert"":"" et les œufs. Il a allumé la cuisinière mais a accidentellement appuyé sur le ""},{""insert"":""gaz"",""attributes"":{""link"":""2""}},{""insert"":"" et les œufs ont volé en éclaboussant le comptoir. Il pensait que c'était sans importance, alors il les a simplement essuyés et a mis le ""},{""insert"":""bacon"",""attributes"":{""link"":""3""}},{""insert"":"" dans la poêle. Alors qu'il faisait frire le ""},{""insert"":""bacon"",""attributes"":{""link"":""3""}},{""insert"":"" il s'est rendu compte qu'il avait fait une erreur de lecture parce qu'il voulait en fait faire cuire du bacon. Il est ensuite allé au magasin acheter la bonne nourriture et leur a préparé un délicieux dîner.\\n""}],
 	""suggestion"": ""Alors qu'ils étaient assis dans le canapé à regarder la télévision, il a décidé de leur préparer le dîner. Il est allé au frigo et a sorti du poulet et des œufs. Il a allumé la cuisinière, mais en appuyant accidentellement sur le gaz, les œufs ont explosé et éclaboussé le comptoir. Il a pensé que ce n'était pas grave, a nettoyé le désordre, puis a mis le bacon dans la poêle. Pendant que le bacon cuisait, il s'est rendu compte de son erreur de lecture : il voulait faire cuire du poulet, et non du bacon. Il est donc retourné au magasin pour acheter les bons ingrédients et leur a finalement préparé un délicieux dîner.""
 }"
 "Jina langu ni Loïc Yabili, mimi na tumikaka mu computer science since miaka mingi, mina pendaka sana ku fanya ma software za mingi!","{
@@ -271,59 +271,59 @@ I love read book because book I study a lot in books for mee it is better that r
 			""old"": ""langue"",
 			""new"": ""langu"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'langu'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'langu'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'langu'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'langu'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'langu' से बदल दिया जाता है""
+				""en"": ""Grammatical error"",
+				""fr"": ""Erreur grammaticale"",
+				""sw"": ""Hitilafu ya kisarufi"",
+				""li"": ""Esobe ya makambo ya orthographe"",
+				""hi"": ""व्याकरणिक त्रुटि""
 			}
 		},
 		{
 			""old"": ""tumikaka"",
 			""new"": ""mtumiaji"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'mtumiaji'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'mtumiaji'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'mtumiaji'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'mtumiaji'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'mtumiaji' से बदल दिया जाता है""
+				""en"": ""Spelling or vocabulary error"",
+				""fr"": ""Erreur d'orthographe ou de vocabulaire"",
+				""sw"": ""Hitilafu ya tahajia au msamiati"",
+				""li"": ""Esobe ya vocabulaire au orthographe"",
+				""hi"": ""वर्तनी या शब्दावली त्रुटि""
 			}
 		},
 		{
 			""old"": ""mina"",
 			""new"": ""na"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'na'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'na'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'na'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'na'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'na' से बदल दिया जाता है""
+				""en"": "" Spelling error or incorrect use of a particle"",
+				""fr"": ""Erreur d'orthographe ou d'utilisation incorrecte d'une particule"",
+				""sw"": ""Hitilafu ya tahajia au matumizi yasiyo sahihi ya chembe"",
+				""li"": ""Esobe ya orthographe au ya lisolo"",
+				""hi"": ""वर्तनी त्रुटि या अनुचित कण का प्रयोग""
 			}
 		},
 		{
 			""old"": ""pendaka"",
 			""new"": ""napenda"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'napenda'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'napenda'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'napenda'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'napenda'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'napenda' से बदल दिया जाता है""
+				""en"": ""Spelling or conjugation error"",
+				""fr"": ""Erreur d'orthographe ou de conjugaison"",
+				""sw"": ""Hitilafu ya tahajia au ya muundo wa kitenzi"",
+				""li"": ""Esobe ya orthographe to ya kokoma"",
+				""hi"": ""वर्तनी या संयुग्मन त्रुटि""
 			}
 		},
 		{
 			""old"": ""fanya"",
 			""new"": ""ku fanya"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'ku fanya'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'ku fanya'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'ku fanya'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'ku fanya'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'ku fanya' से बदल दिया जाता है""
+				""en"": ""Omission of the infinitive particle error"",
+				""fr"": ""Erreur d'omission de la particule d'infinitif"",
+				""sw"": ""Hitilafu ya kuacha chembe ya infinitive"",
+				""li"": ""Esobe ya kolongola likambo ya infinitive"",
+				""hi"": ""अनंत कण की चूक""
 			}
 		}
 	],
-""correction_quill"": [{""insert"":""Jina ""},{""insert"":""langu"",""attributes"":{""link"":""0""}},{""insert"":"" ni Loïc Yabili, mimi ni ""},{""insert"":""mtumiaji"",""attributes"":{""link"":""1""}},{""insert"":"" wa computer science toka miaka mingi, ""},{""insert"":""na"",""attributes"":{""link"":""2""}},{""insert"":"" ""},{""insert"":""napenda"",""attributes"":{""link"":""3""}},{""insert"":"" sana ""},{""insert"":""ku fanya"",""attributes"":{""link"":""4""}},{""insert"":"" ma software ya mingi!""}],
+""correction_quill"": [{""insert"":""Jina ""},{""insert"":""langu"",""attributes"":{""link"":""0""}},{""insert"":"" ni Loïc Yabili, mimi ni ""},{""insert"":""mtumiaji"",""attributes"":{""link"":""1""}},{""insert"":"" wa computer science toka miaka mingi, ""},{""insert"":""na"",""attributes"":{""link"":""2""}},{""insert"":"" ""},{""insert"":""napenda"",""attributes"":{""link"":""3""}},{""insert"":"" sana ""},{""insert"":""ku fanya"",""attributes"":{""link"":""4""}},{""insert"":"" ma software ya mingi!\\n""}],
 	""suggestion"": ""Jina langu ni Loïc Yabili. Mimi ni mtaalamu wa sayansi ya kompyuta kwa miaka mingi na napenda sana kutengeneza programu mbalimbali.""
 }"
 "Hello,
@@ -339,59 +339,48 @@ I am writing this message to notice you that I am looking for someone who can re
 			""old"": ""persons"",
 			""new"": ""people"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'people'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'people'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'people'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'people'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'people' से बदल दिया जाता है""
-			}
-		},
-		{
-			""old"": ""is"",
-			""new"": ""I"",
-			""reasons"": {
-				""en"": ""capitalization error"",
-				""fr"": ""erreur de majuscule"",
-				""sw"": ""kosa la herufi kubwa"",
-				""li"": ""libunga ya etanda"",
-				""hi"": ""कैपिटलाइजेशन त्रुटि""
+				""en"": ""Usage or lexical choice error"",
+				""fr"": ""Erreur d'usage ou de choix lexical"",
+				""sw"": ""Hitilafu ya matumizi au uchaguzi wa msamiati"",
+				""li"": ""Esobe ya kokoma au ya lisolo"",
+				""hi"": ""उपयोग या शब्द चयन त्रुटि""
 			}
 		},
 		{
 			""old"": ""how"",
 			""new"": ""what"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'what'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'what'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'what'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'what'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'what' से बदल दिया जाता है""
+				""en"": ""Vocabulary or interrogative form error"",
+				""fr"": ""Erreur de vocabulaire ou de forme interrogative"",
+				""sw"": ""Hitilafu ya msamiati au ya muundo wa kiulizo"",
+				""li"": ""Esobe ya vocabulaire au kokoma"",
+				""hi"": ""शब्द चयन या प्रश्नात्मक रूप त्रुटि""
 			}
 		},
 		{
 			""old"": ""notice"",
 			""new"": ""notify"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'notify'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'notify'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'notify'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'notify'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'notify' से बदल दिया जाता है""
+				""en"": ""Vocabulary error"",
+				""fr"": ""Erreur de vocabulaire"",
+				""sw"": ""Hitilafu ya msamiati"",
+				""li"": ""Esobe ya lisolo"",
+				""hi"": ""शब्द चयन त्रुटि""
 			}
 		},
 		{
 			""old"": ""continents"",
 			""new"": ""continent"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'continent'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'continent'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'continent'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'continent'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'continent' से बदल दिया जाता है""
+				""en"": ""Grammatical number error"",
+				""fr"": ""Erreur de nombre grammatical"",
+				""sw"": ""Hitilafu ya idadi ya kimaumbile"",
+				""li"": ""Esobe ya kokoma na nombre ya mboka"",
+				""hi"": ""व्याकरणात्मक संख्या त्रुटि""
 			}
 		}
 	],
-""correction_quill"": [{""insert"":""Hello, ""},{""insert"":""\nMy name is John Doe, I am one of the most popular ""},{""insert"":""personalities"",""attributes"":{""link"":""0""}},{""insert"":"" in this world because many ""},{""insert"":""people"",""attributes"":{""link"":""1""}},{""insert"":"" know my name but don't know ""},{""insert"":""what"",""attributes"":{""link"":""2""}},{""insert"":"" I look like 😳.\n\nI am writing this message to ""},{""insert"":""notify"",""attributes"":{""link"":""3""}},{""insert"":"" you that I am looking for someone who can replace my name so developers will not use it anymore!!! I am very tired, and if that doesn't change, I will take you to court. I have the best lawyer on this ""},{""insert"":""continent"",""attributes"":{""link"":""4""}},{""insert"":""; his name is Mr. Saul Goodman.""}],
+""correction_quill"": [{""insert"":""Hello, ""},{""insert"":""\nMy name is John Doe, I am one of the most popular personalities in this world because many ""},{""insert"":""people"",""attributes"":{""link"":""0""}},{""insert"":"" know my name but don't know ""},{""insert"":""what"",""attributes"":{""link"":""1""}},{""insert"":"" I look like 😳.\n\nI am writing this message to ""},{""insert"":""notify"",""attributes"":{""link"":""2""}},{""insert"":"" you that I am looking for someone who can replace my name so developers will not use it anymore!!! I am very tired, and if that doesn't change, I will take you to court. I have the best lawyer on this ""},{""insert"":""continent"",""attributes"":{""link"":""3""}},{""insert"":""; his name is Mr. Saul Goodman.\\n""}],
 	""suggestion"": ""Hello,\n\nMy name is John Doe, I am one of the most famous people in the world since a lot of people recognize my name, but they don't know what I look like. So this is why I'm contacting you.\nI am looking for someone who can use another name so that developers will not use my name anymore! I am tired of it and I will take legal actions if necessary. My lawyer on this continent is Saul Goodman.""
 }"
 "﻿ There their they where siting in the couch watching TV when he decide to cook them dinner. He went to the fridge and grab the break and eggs. He turn on the stove but accidental hit the break and the eggs flew scattering in the counter. He thought that it would be irregardless so he just mop them up and put the break in the pan. As he was frying the break, he realize that he had made a spoonirsm error because he actually wanted to cook bacon. He then went to the store to buy the right food and made them a delicious dinner.﻿","{
@@ -399,36 +388,25 @@ I am writing this message to notice you that I am looking for someone who can re
 	""correction"": ""There, they were sitting in the couch watching TV when he decided to cook them dinner. He went to the fridge and grabbed the eggs and bacon. He turned on the stove but accidentally hit the gas and the eggs flew scattering on the counter. He thought that it would be irrelevant so he just mopped them up and put the bacon in the pan. As he was frying the bacon, he realized that he had made a spoonerism error because he actually wanted to cook bacon. He then went to the store to buy the right food and made them a delicious dinner."",
 	""edits"": [
 		{
-			""old"": ""break"",
-			""new"": ""bacon"",
-			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'bacon'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'bacon'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'bacon'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'bacon'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'bacon' से बदल दिया जाता है""
-			}
-		},
-		{
 			""old"": ""where"",
 			""new"": ""were"",
 			""reasons"": {
-				""en"": ""tense error"",
-				""fr"": ""erreur de temps"",
-				""sw"": ""kosa la wakati"",
-				""li"": ""libunga ya ntango"",
-				""hi"": ""काल त्रुटि""
+				""en"": ""Spelling or misuse error"",
+				""fr"": ""Erreur d'orthographe ou mauvaise utilisation"",
+				""sw"": ""Hitilafu ya tahajia au matumizi yasiyo sahihi"",
+				""li"": ""Esobe ya kokoma au kosolola"",
+				""hi"": ""वर्तनी या गलत उपयोग त्रुटि""
 			}
 		},
 		{
 			""old"": ""siting"",
 			""new"": ""sitting"",
 			""reasons"": {
-				""en"": ""tense error"",
-				""fr"": ""erreur de temps"",
-				""sw"": ""kosa la wakati"",
-				""li"": ""libunga ya ntango"",
-				""hi"": ""काल त्रुटि""
+				""en"": ""Spelling error"",
+				""fr"": ""Erreur d'orthographe"",
+				""sw"": ""Hitilafu ya tahajia"",
+				""li"": ""Esobe ya kokoma"",
+				""hi"": ""वर्तनी त्रुटि""
 			}
 		},
 		{
@@ -453,6 +431,17 @@ I am writing this message to notice you that I am looking for someone who can re
 				""hi"": ""काल त्रुटि""
 			}
 		},
+{
+			""old"": ""break"",
+			""new"": ""bacon"",
+			""reasons"": {
+				""en"": "" Vocabulary error, \""bacon\"" is more appropriate in the context"",
+				""fr"": ""Erreur de vocabulaire, \""bacon\"" est plus approprié dans le contexte"",
+				""sw"": ""Hitilafu ya msamiati, \""bacon\"" inafaa zaidi katika muktadha huu"",
+				""li"": ""Esobe ya lisolo, \""bacon\"" ezali motuya ya solo"",
+				""hi"": ""शब्दावली त्रुटि, \""bacon\"" संदर्भ में अधिक उपयुक्त है""
+			}
+		},
 		{
 			""old"": ""turn"",
 			""new"": ""turned"",
@@ -468,22 +457,22 @@ I am writing this message to notice you that I am looking for someone who can re
 			""old"": ""accidental"",
 			""new"": ""accidentally"",
 			""reasons"": {
-				""en"": ""tense error"",
-				""fr"": ""erreur de temps"",
-				""sw"": ""kosa la wakati"",
-				""li"": ""libunga ya ntango"",
-				""hi"": ""काल त्रुटि""
+				""en"": ""Word form or adverb usage error"",
+				""fr"": ""Erreur de forme de mot ou de mauvais usage de l'adverbe"",
+				""sw"": ""Hitilafu ya umbo la neno au matumizi yasiyo sahihi ya kivumishi"",
+				""li"": ""Esobe ya form ya motuya au ya kokoma"",
+				""hi"": "" शब्द रूप या क्रिया-विशेषण के उपयोग की त्रुटि""
 			}
 		},
 		{
 			""old"": ""irregardless"",
 			""new"": ""irrelevant"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'irrelevant'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'irrelevant'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'irrelevant'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'irrelevant'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'irrelevant' से बदल दिया जाता है""
+				""en"": ""Vocabulary error or word choice error"",
+				""fr"": ""Erreur de vocabulaire ou mauvais choix de mot"",
+				""sw"": ""Hitilafu ya msamiati au uchaguzi usiofaa wa neno"",
+				""li"": ""Esobe ya lisolo au ya kokoma"",
+				""hi"": ""शब्द चयन त्रुटि या शब्द उपयोग त्रुटि""
 			}
 		},
 		{
@@ -501,15 +490,15 @@ I am writing this message to notice you that I am looking for someone who can re
 			""old"": ""spoonirsm"",
 			""new"": ""spoonerism"",
 			""reasons"": {
-				""en"": ""Unknown word automatically replaced by 'spoonerism'"",
-				""fr"": ""Mot inconnu automatiquement remplacé par 'spoonerism'"",
-				""sw"": ""Neno lisilojulikana limebadilishwa kiotomatiki na 'spoonerism'"",
-				""li"": ""Liloba oyo eyebani te ekitani yango moko na 'spoonerism'"",
-				""hi"": ""अज्ञात शब्द को स्वचालित रूप से 'spoonerism' से बदल दिया जाता है""
+				""en"": ""Spelling error"",
+				""fr"": ""Erreur d'orthographe"",
+				""sw"": ""Hitilafu ya tahajia"",
+				""li"": ""Esobe ya kokoma"",
+				""hi"": ""वर्तनी त्रुटि""
 			}
 		}
 	],
-""correction_quill"": [{""insert"":""There, they ""},{""insert"":""were"",""attributes"":{""link"":""1""}},{""insert"":"" sitting in the couch watching TV when he ""},{""insert"":""decided"",""attributes"":{""link"":""2""}},{""insert"":"" to cook them dinner. He went to the fridge and ""},{""insert"":""grabbed"",""attributes"":{""link"":""3""}},{""insert"":"" the eggs and bacon. He ""},{""insert"":""turned"",""attributes"":{""link"":""4""}},{""insert"":"" on the stove but ""},{""insert"":""accidentally"",""attributes"":{""link"":""5""}},{""insert"":"" hit the gas and the eggs flew scattering on the counter. He thought that it would be ""},{""insert"":""irrelevant"",""attributes"":{""link"":""6""}},{""insert"":"" so he just ""},{""insert"":""mopped"",""attributes"":{""link"":""7""}},{""insert"":"" them up and put the bacon in the pan. As he was frying the bacon, he ""},{""insert"":""realized"",""attributes"":{""link"":""8""}},{""insert"":"" that he had made a ""},{""insert"":""spoonerism"",""attributes"":{""link"":""9""}},{""insert"":"" error because he actually wanted to cook bacon. He then went to the store to buy the right food and made them a delicious dinner.""}],
+""correction_quill"": [{""insert"":""There, they ""},{""insert"":""were"",""attributes"":{""link"":""0""}},{""insert"":"" sitting"",""attributes"":{""link"":""1""}},{""insert"":""in the couch watching TV when he ""},{""insert"":""decided"",""attributes"":{""link"":""2""}},{""insert"":"" to cook them dinner. He went to the fridge and ""},{""insert"":""grabbed"",""attributes"":{""link"":""3""}},{""insert"":"" the eggs and ""},{""insert"":""bacon"",""attributes"":{""link"":""4""}},{""insert"":"". He ""},{""insert"":""turned"",""attributes"":{""link"":""5""}},{""insert"":"" on the stove but ""},{""insert"":""accidentally"",""attributes"":{""link"":""6""}},{""insert"":"" hit the gas and the eggs flew scattering on the counter. He thought that it would be ""},{""insert"":""irrelevant"",""attributes"":{""link"":""7""}},{""insert"":"" so he just ""},{""insert"":""mopped"",""attributes"":{""link"":""8""}},{""insert"":"" them up and put the bacon in the pan. As he was frying the bacon, he realized that he had made a ""},{""insert"":""spoonerism"",""attributes"":{""link"":""9""}},{""insert"":"" error because he actually wanted to cook bacon. He then went to the store to buy the right food and made them a delicious dinner.\\n""}],
 	""suggestion"": ""They were sitting on the couch watching TV when he decided to cook them dinner. He went to the fridge and took out the eggs and bacon. He turned on the stove and accidentally hit the gas burner. The eggs flew out of the pan and splattered on the counter, but he decided that it was no big deal and just cleaned them up. Then he put the bacon in the pan and started to fry it. But as he was cooking, he realized that he had made a mistake and that he actually wanted to cook bacon. He quickly went back to the store and bought the right food, and then he cooked them a delicious dinner.""
 }"
 ,
