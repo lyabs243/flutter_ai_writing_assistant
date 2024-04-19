@@ -1,55 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ai_writing_assistant/models/language_model.dart';
 
 class LanguageSelectionWidget extends StatelessWidget {
 
-  const LanguageSelectionWidget({super.key});
+  final LanguageModel selectedLanguage;
+  final Function(LanguageModel?)? onLanguageSelected;
+
+  const LanguageSelectionWidget({super.key, required this.selectedLanguage, this.onLanguageSelected});
 
   @override
   Widget build(BuildContext context) {
-    return DropdownButton(
+
+    return DropdownButton<LanguageModel>(
       borderRadius: BorderRadius.circular(12),
-      value: 'en',
-      items: const [
-        DropdownMenuItem(
-          value: 'en',
-          child: Text('🇺🇸 English'),
-        ),
-        DropdownMenuItem(
-          value: 'fr',
-          child: Text('🇫🇷 Français'),
-        ),
-        DropdownMenuItem(
-          value: 'es',
-          child: Text('🇪🇸 Español'),
-        ),
-        // swahili
-        DropdownMenuItem(
-          value: 'sw',
-          child: Text('🇰🇪 Kiswahili'),
-        ),
-        // lingala
-        DropdownMenuItem(
-          value: 'ln',
-          child: Text('🇨🇩 Lingala'),
-        ),
-        // Hindi
-        DropdownMenuItem(
-          value: 'hi',
-          child: Text('🇮🇳 हिन्दी'),
-        ),
-        // arab
-        DropdownMenuItem(
-          value: 'ar',
-          child: Text('🇸🇦 العربية'),
-        ),
-        // Chinese
-        DropdownMenuItem(
-          value: 'zh',
-          child: Text('🇨🇳 中文'),
-        ),
-      ],
-      onChanged: (value) {
-      },
+      value: selectedLanguage,
+      items: LanguageModel.getSupportedLanguages().map((LanguageModel language) {
+        return DropdownMenuItem<LanguageModel>(
+          value: language,
+          child: Text(language.name),
+        );
+      }).toList(),
+      onChanged: onLanguageSelected,
     );
   }
 

@@ -16,6 +16,7 @@ class TextSuggestionWidget extends StatelessWidget {
         color: Theme.of(context).primaryColor,
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [

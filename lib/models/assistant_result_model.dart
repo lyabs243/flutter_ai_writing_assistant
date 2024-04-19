@@ -34,13 +34,23 @@ class AssistantResultModel {
       suggestion = json[fieldSuggestion];
     }
 
-    return AssistantResultModel(
+    AssistantResultModel model = AssistantResultModel(
       sentenceLang: json[fieldSentenceLang]?? '',
       correction: json[fieldCorrection],
       suggestion: suggestion,
       edits: List<EditModel>.from(json[fieldEdits].map((e) => EditModel.fromJson(e))),
       correctionQuillDelta: List.from(json[fieldCorrectionQuillDelta]),
     );
+
+    // ensure that the last quilt delta is a newline
+    if (model.correctionQuillDelta.isNotEmpty) {
+      final last = model.correctionQuillDelta.last;
+      if (last['insert'] != '\n') {
+        model.correctionQuillDelta.add({'insert': '\n'});
+      }
+    }
+
+    return model;
   }
 
   // toJson
@@ -52,6 +62,17 @@ class AssistantResultModel {
       fieldEdits: edits.map((e) => e.toJson()).toList(),
       fieldCorrectionQuillDelta: correctionQuillDelta,
     };
+  }
+
+  // get edit by index (String) if exists
+  EditModel? getEdit(String index) {
+    if (int.tryParse(index) != null) {
+      int i = int.parse(index);
+      if (i >= 0 && i < edits.length) {
+        return edits[i];
+      }
+    }
+    return null;
   }
 
 }

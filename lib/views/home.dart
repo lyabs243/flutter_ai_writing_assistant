@@ -1,6 +1,9 @@
-import 'dart:convert';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_ai_writing_assistant/controllers/assistant_controller.dart';
+import 'package:flutter_ai_writing_assistant/models/assistant_result_model.dart';
+import 'package:flutter_ai_writing_assistant/models/edit_model.dart';
+import 'package:flutter_ai_writing_assistant/models/language_model.dart';
 import 'package:flutter_ai_writing_assistant/utils/constants.dart';
 import 'package:flutter_ai_writing_assistant/utils/methods.dart';
 import 'package:flutter_ai_writing_assistant/views/components/correction_tooltip.dart';
@@ -24,12 +27,14 @@ class HomePage extends StatefulWidget {
 class HomePageState extends State<HomePage> {
 
   final QuillController quillController = QuillController.basic();
+  final AssistantController assistantController = AssistantController();
+  AssistantResultModel? result;
   bool readOnly = false, loading = false;
+  LanguageModel selectedLanguage = LanguageModel.getSupportedLanguages().first;
 
   @override
   void initState() {
     super.initState();
-    quillController.document.insert(0, '''C est une joie immensee de savoir que mon artile de blog où j'ai écrit il y a deux semaines a ete mis en avant par Hashnode''');
   }
 
   @override
@@ -39,7 +44,16 @@ class HomePageState extends State<HomePage> {
       appBar: AppBar(
         leading: const SizedBox.shrink(),
         actions: [
-          const LanguageSelectionWidget(),
+          LanguageSelectionWidget(
+            selectedLanguage: selectedLanguage,
+            onLanguageSelected: (LanguageModel? language) {
+              if (language != null) {
+                setState(() {
+                  selectedLanguage = language;
+                });
+              }
+            },
+          ),
           IconButton(
             onPressed: () {
               Navigator.of(context).pop();
@@ -60,7 +74,7 @@ class HomePageState extends State<HomePage> {
               style: Theme.of(context).textTheme.headlineLarge,
             ),
             Text(
-              'Explanation will be in English, you can change the language in the top right corner.',
+              'Explanation will be in ${selectedLanguage.name}, you can change the language in the top right corner.',
               style: Theme.of(context).textTheme.bodyMedium,
             ),
             const SizedBox(height: 20),
@@ -83,13 +97,7 @@ class HomePageState extends State<HomePage> {
                 customRecognizerBuilder: (attribute, leaf) {
                   return TapGestureRecognizer()
                     ..onTapDown = (TapDownDetails details) {
-                      CorrectionTooltip.show(
-                        context: context,
-                        tapDownDetails: details,
-                        oldText: 'Old Text',
-                        newText: 'New Text',
-                        explanation: 'The reason for the change, it could be a spelling mistake, a grammatical error, or a suggestion.',
-                      );
+                      showToolTip(details, attribute);
                     };
                 },
               ),
@@ -102,7 +110,7 @@ class HomePageState extends State<HomePage> {
                   copyText(context, quillController.document.toPlainText());
                 },
                 onEdit: () {
-                  quillController.document = Document() .. insert(0, '''C'est une joie immenses de savoir que mon article de blog où j'ai écrit il y a deux semaines a ete mis en avant par Hashnode''');
+                  quillController.document = Document() .. insert(0, quillController.document.toPlainText());
                   setState(() {
                     readOnly = false;
                   });
@@ -136,16 +144,8 @@ class HomePageState extends State<HomePage> {
                   const SizedBox(width: 5),
                   ElevatedButton.icon(
                     onPressed: (loading)? null:
-                     () async {
-                      setState(() {
-                        loading = true;
-                      });
-                      await Future.delayed(const Duration(seconds: 2));
-                      quillController.document = Document.fromJson(jsonDecode('''[{"insert":"C'est","attributes":{"link":"0"}},{"insert":" une joie "},{"insert":"immenses","attributes":{"link":"1"}},{"insert":" de savoir que mon "},{"insert":"article","attributes":{"link":"2"}},{"insert":" de blog où j'ai écrit il y a deux semaines a ete mis en avant par Hashnode\\n"}]'''));
-                      setState(() {
-                        loading = false;
-                        readOnly = true;
-                      });
+                    () {
+                      check(context);
                     },
                     icon: const Icon(Icons.check_circle_outline),
                     label: Text(
@@ -164,15 +164,67 @@ class HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 20),
             Visibility(
-              visible: readOnly,
-              child: const TextSuggestionWidget(
-                text: '''Je suis extrêmement heureux d'apprendre que mon article de blog, que j'ai rédigé il y a deux semaines, a été mis en évidence par Hashnode.''',
+              visible: readOnly && result?.suggestion != null,
+              child: TextSuggestionWidget(
+                text: result?.suggestion?? '',
               ),
             ),
           ],
         ),
       ),
     );
+  }
+  
+  check(BuildContext context) async {
+    setState(() {
+      loading = true;
+    });
+
+    // it is better to catch the error
+    // the model may return malformed JSON data
+    try {
+      result = await assistantController.check(quillController.document.toPlainText());
+      quillController.document = Document.fromJson(result!.correctionQuillDelta);
+
+      setState(() {
+        loading = false;
+        readOnly = true;
+      });
+    }
+    catch (e) {
+      debugPrint('===> Error checking text: $e - ${result?.correctionQuillDelta}');
+
+      setState(() {
+        loading = false;
+      });
+
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Something went wrong, please try again.'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+    }
+
+  }
+
+  showToolTip(TapDownDetails details, Attribute attribute) {
+    // if it is link, show the tooltip
+    if (attribute.key == 'link' && result != null) {
+      final EditModel? edit = result!.getEdit(attribute.value
+          .toString());
+      if (edit != null) {
+        CorrectionTooltip.show(
+          context: context,
+          tapDownDetails: details,
+          oldText: edit.oldText,
+          newText: edit.newText,
+          explanation: edit.getReason(selectedLanguage.code),
+        );
+      }
+    }
   }
 
 }
