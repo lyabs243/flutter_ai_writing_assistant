@@ -1,9 +1,9 @@
 import 'package:flutter_ai_writing_assistant/models/edit_model.dart';
+import 'package:flutter_ai_writing_assistant/utils/methods.dart';
 
 const fieldSentenceLang = 'sentence_lang';
 const fieldCorrection = 'correction';
 const fieldEdits = 'edits';
-const fieldCorrectionQuillDelta = 'correction_quill';
 const fieldSuggestion = 'suggestion';
 
 class AssistantResultModel {
@@ -11,20 +11,19 @@ class AssistantResultModel {
   String sentenceLang, correction;
   String? suggestion;
   List<EditModel> edits;
-  List correctionQuillDelta;
+  List correctionQuillDelta = [];
 
   AssistantResultModel({
     this.sentenceLang = '',
     required this.correction,
     this.suggestion,
     required this.edits,
-    required this.correctionQuillDelta,
   });
 
   // fromJson
-  factory AssistantResultModel.fromJson(Map<String, dynamic> json) {
+  factory AssistantResultModel.fromJson(Map<String, dynamic> json, String originalSentence) {
 
-    if (!json.containsKey(fieldCorrection) || !json.containsKey(fieldEdits) || !json.containsKey(fieldCorrectionQuillDelta)) {
+    if (!json.containsKey(fieldCorrection) || !json.containsKey(fieldEdits)) {
       throw ArgumentError('AssistantResultModel.fromJson: missing required fields');
     }
 
@@ -39,16 +38,8 @@ class AssistantResultModel {
       correction: json[fieldCorrection],
       suggestion: suggestion,
       edits: List<EditModel>.from(json[fieldEdits].map((e) => EditModel.fromJson(e))),
-      correctionQuillDelta: List.from(json[fieldCorrectionQuillDelta]),
     );
-
-    // ensure that the last quilt delta is a newline
-    if (model.correctionQuillDelta.isNotEmpty) {
-      final last = model.correctionQuillDelta.last;
-      if (last['insert'] != '\n') {
-        model.correctionQuillDelta.add({'insert': '\n'});
-      }
-    }
+    model.correctionQuillDelta = textToQuillDelta(model.correction, originalSentence, model.edits);
 
     return model;
   }
@@ -60,7 +51,6 @@ class AssistantResultModel {
       fieldCorrection: correction,
       fieldSuggestion: suggestion,
       fieldEdits: edits.map((e) => e.toJson()).toList(),
-      fieldCorrectionQuillDelta: correctionQuillDelta,
     };
   }
 
@@ -73,6 +63,14 @@ class AssistantResultModel {
       }
     }
     return null;
+  }
+
+  List<String> get wordsEdited {
+    List<String> words = [];
+    for (EditModel edit in edits) {
+      words.add(edit.newText);
+    }
+    return words;
   }
 
 }
