@@ -1,5 +1,8 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter_ai_writing_assistant/models/edit_model.dart';
 import 'package:flutter_ai_writing_assistant/utils/methods.dart';
+
 
 const fieldSentenceLang = 'sentence_lang';
 const fieldCorrection = 'correction';
@@ -71,6 +74,17 @@ class AssistantResultModel {
       words.add(edit.newText);
     }
     return words;
+  }
+
+  log() {
+    print("Correction: $correction");
+    print("Suggestion: $suggestion");
+    print("Correction Quill Delta: $correctionQuillDelta");
+
+    print("\n==> Edits");
+    for (EditModel edit in edits) {
+      print("${edit.oldText} -> ${edit.newText} => ${edit.getReason('en')}");
+    }
   }
 
 }

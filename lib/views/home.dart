@@ -5,6 +5,7 @@ import 'package:flutter_ai_writing_assistant/models/assistant_result_model.dart'
 import 'package:flutter_ai_writing_assistant/models/edit_model.dart';
 import 'package:flutter_ai_writing_assistant/models/language_model.dart';
 import 'package:flutter_ai_writing_assistant/utils/constants.dart';
+import 'package:flutter_ai_writing_assistant/utils/enums.dart';
 import 'package:flutter_ai_writing_assistant/utils/methods.dart';
 import 'package:flutter_ai_writing_assistant/views/components/correction_tooltip.dart';
 import 'package:flutter_ai_writing_assistant/views/components/editor_actions_widget.dart';
@@ -183,7 +184,7 @@ class HomePageState extends State<HomePage> {
     // it is better to catch the error
     // the model may return malformed JSON data
     try {
-      result = await assistantController.check(quillController.document.toPlainText());
+      result = await assistantController.check(quillController.document.toPlainText(),version: GeminiVersion.v1_5);
       quillController.document = Document.fromJson(result!.correctionQuillDelta);
 
       setState(() {

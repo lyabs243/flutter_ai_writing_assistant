@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   flutter_quill: ^9.3.6
   google_generative_ai: ^0.3.0
+  http: ^1.2.1
 
 dev_dependencies:
   flutter_test:

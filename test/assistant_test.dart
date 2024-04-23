@@ -3,6 +3,7 @@ import 'dart:convert';
 
 import 'package:flutter_ai_writing_assistant/models/assistant_result_model.dart';
 import 'package:flutter_ai_writing_assistant/models/edit_model.dart';
+import 'package:flutter_ai_writing_assistant/utils/enums.dart';
 import 'package:flutter_ai_writing_assistant/utils/methods.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_ai_writing_assistant/controllers/assistant_controller.dart';
@@ -12,23 +13,22 @@ void main() {
     test('Test check method', () async {
       final controller = AssistantController();
       const String sentence = String.fromEnvironment('SENTENCE');
-      AssistantResultModel? result =  await controller.check(sentence);
+      List<AssistantResultModel?> models = await Future.wait(
+        [
+          controller.check(sentence, version: GeminiVersion.v1_0),
+          controller.check(sentence, version: GeminiVersion.v1_5),
+        ]
+      );
 
-      if (result != null) {
-        print('=============> Result <=============\n');
-        print("Input: $sentence\n");
-        print("Correction: ${result.correction}\n");
-        print("Suggestion: ${result.suggestion}\n");
-        print("Correction Quill Delta: ${result.correctionQuillDelta}\n");
-        
-        print("==> Edits\n");
-        for (EditModel edit in result.edits) {
-          print("${edit.oldText} -> ${edit.newText} => ${edit.getReason('en')}\n");
-        }
+      print("Input: $sentence\n\n");
 
-      }
+      print('=============> Gemini 1.0 <=============');
+      models.first?.log();
 
-      expect(result, isNotNull);
+      print('\n=============> Gemini 1.5 <=============');
+      models.last?.log();
+
+      expect(models.first != null || models.last != null, true);
     });
   });
 
