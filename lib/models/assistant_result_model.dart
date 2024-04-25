@@ -36,11 +36,21 @@ class AssistantResultModel {
       suggestion = json[fieldSuggestion];
     }
 
+    List<EditModel> edits = [];
+    for (Map<String, dynamic> edit in json[fieldEdits]) {
+      try {
+        edits.add(EditModel.fromJson(edit));
+      }
+      catch (err) {
+        print('===> Failed to parse edit: $edit - $err');
+      }
+    }
+
     AssistantResultModel model = AssistantResultModel(
       sentenceLang: json[fieldSentenceLang]?? '',
       correction: json[fieldCorrection],
       suggestion: suggestion,
-      edits: List<EditModel>.from(json[fieldEdits].map((e) => EditModel.fromJson(e))),
+      edits: edits,
     );
     model.correctionQuillDelta = textToQuillDelta(model.correction, originalSentence, model.edits);
 

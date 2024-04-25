@@ -91,7 +91,11 @@ class AssistantController {
       //debugPrint('=====> RESULT: ${response.body}');
       Map map = jsonDecode(response.body);
       String jsonResult = map["candidates"][0]["content"]["parts"][0]["text"];
-      return AssistantResultModel.fromJson(jsonDecode(jsonResult), input);
+      var decodeRes = jsonDecode(jsonResult);
+      if (decodeRes is List) {
+        decodeRes = decodeRes[0];
+      }
+      return AssistantResultModel.fromJson(decodeRes, input);
     }
     catch (err) {
       debugPrint('=====> v1.5 Check ERROR: $err');

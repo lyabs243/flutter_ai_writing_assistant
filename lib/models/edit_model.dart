@@ -17,7 +17,7 @@ class EditModel {
   factory EditModel.fromJson(Map<String, dynamic> json) {
 
     if (!json.containsKey(fieldEditOld) || !json.containsKey(fieldEditNew) || !json.containsKey(fieldEditReasons)) {
-      throw ArgumentError('EditModel.fromJson: missing required fields');
+      throw ArgumentError('EditModel.fromJson: missing required fields - $json');
     }
 
     return EditModel(
